@@ -1,0 +1,5 @@
+steps:
+- name: 'hashicorp/terraform'
+  args: ['init']
+- name: 'hashicorp/terraform'
+  args: ['apply','-var=PROJECT_ID=$PROJECT_ID','-auto-approve']
